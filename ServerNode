@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ServerNode {
+    private List<ClientNode> clientNodes;
+
+    public ServerNode() {
+        this.clientNodes = new ArrayList<>();
+    }
+
+    public void addClientNode(ClientNode clientNode) {
+        clientNodes.add(clientNode);
+    }
+
+    public void brokerMessage(String message) {
+        for (ClientNode clientNode : clientNodes) {
+            clientNode.receiveMessage(message);
+        }
+    }
+
+    public static void main(String[] args) {
+        ServerNode serverNode = new ServerNode();
+        ClientNode clientNode1 = new ClientNode("ClientNode1");
+        ClientNode clientNode2 = new ClientNode("ClientNode2");
+        serverNode.addClientNode(clientNode1);
+        serverNode.addClientNode(clientNode2);
+        serverNode.brokerMessage("Hello from server!");
+    }
+}
