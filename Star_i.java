@@ -12,7 +12,6 @@ class Star {
 
     public static void main(String[] args) {
         Star star = new Star();
-   
     }
 }
 
@@ -22,6 +21,4 @@ class Node {
     public Node() {
         this.dataValues = new ArrayList<>();
     }
-
-
 }
