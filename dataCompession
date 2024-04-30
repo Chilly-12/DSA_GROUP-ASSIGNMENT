@@ -1,3 +1,5 @@
+we used a lossless data compression,which is huffman coding and below is the example.
+
 import java.util.Comparator;  
 import java.util.HashMap;  
 import java.util.Map;  
@@ -140,3 +142,6 @@ public class HuffmanCode
         createHuffmanTree(text);  
     }  
 }  
+
+
+ii, the worst time complexity of the above code is O(nlogn).
