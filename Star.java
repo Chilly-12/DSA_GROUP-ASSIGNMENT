@@ -10,17 +10,9 @@ class Star {
         this.peripheralNodes = new ArrayList<>();
     }
 
-    public void insertNode(Node node) {
-        peripheralNodes.add(node);
-    }
-
-    public void deleteNode(Node node) {
-        peripheralNodes.remove(node);
-    }
-
     public static void main(String[] args) {
         Star star = new Star();
-    
+   
     }
 }
 
@@ -29,5 +21,7 @@ class Node {
 
     public Node() {
         this.dataValues = new ArrayList<>();
-    }
+    }
+
+
 }
