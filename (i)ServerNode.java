@@ -31,7 +31,6 @@ public class ServerNode {
 
     // Setter methods for data1 and data2
     // These setters are optional and can be used to set data specific to the server node
-    // You can remove them if not needed
     public void setData1(String data1) {
         // Implement data validation or other logic if needed
         this.data1 = data1;
